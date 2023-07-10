@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.caocaorbac.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="com.caocaorbac.pojo.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="tenant_id" jdbcType="VARCHAR" property="tenantID"/>
+        <result column="department_id" jdbcType="INTEGER" property="deptID"/>
+        <result column="user_name" jdbcType="VARCHAR" property="username"/>
+        <result column="pwd" jdbcType="VARCHAR" property="pwd"/>
+        <result column="user_code" jdbcType="VARCHAR" property="usercode"/>
+        <result column="user_email" jdbcType="VARCHAR" property="email"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="is_deleted" jdbcType="BOOLEAN" property="isDeleted"/>
+        <collection property="roles" ofType="com.caocaorbac.pojo.Role" columnPrefix="role_">
+            <id column="id" property="id"/>
+            <result column="name" property="name"/>
+        </collection>
+    </resultMap>
+
+    <!-- get user by login -->
+    <select id="selUserInfoMapper" resultType="com.caocaorbac.pojo.User">
+        select *
+        from User
+        where user_name = #{user_name} and pwd = #{pwd}
+    </select>
+
+    <!-- get role by user id-->
+    <select id="getRoleByUser" resultMap="UserResultMap">
+        select u.*,
+               r.id as role_id,
+               r.name as role_name
+        from User u
+                left join User_Role ur on u.id = ur.user_id
+                left join Role r on r.id = ur.role_id
+        where u.id = #{id}
+    </select>
+
+
+
+
+
+</mapper>
