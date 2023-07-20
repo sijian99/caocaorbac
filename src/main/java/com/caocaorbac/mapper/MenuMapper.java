@@ -1,12 +1,19 @@
 package com.caocaorbac.mapper;
 
-import com.caocaorbac.pojo.Role;
-import org.apache.ibatis.annotations.Param;
+import com.caocaorbac.pojo.Menu;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
+@Mapper
 public interface MenuMapper {
 
-    /** get urls by menu**/
-    Role getMenuById(@Param("id") Integer id);
+    /** get list of Menus by roleId **/
+    List<Menu> getAllMenuByRoleID(int roleId);
+
+    List<String> getAllChildByPID(int parentId, int level);
+
 }
+
