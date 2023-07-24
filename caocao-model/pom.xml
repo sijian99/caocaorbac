@@ -6,18 +6,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>caocao-service</artifactId>
-    <name>Archetype - caocao-service</name>
+    <artifactId>caocao-model</artifactId>
+    <name>Archetype - caocao-model</name>
     <url>http://maven.apache.org</url>
-    <dependencies>
-        <dependency>
-            <groupId>com.caocaorbac</groupId>
-            <artifactId>caocao-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
-
-
-    </dependencies>
 </project>

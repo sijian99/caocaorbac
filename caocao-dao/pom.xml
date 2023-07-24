@@ -6,4 +6,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - caocao-dao</name>
   <url>http://maven.apache.org</url>
+
+  <parent>
+    <artifactId>caocao_rbac</artifactId>
+    <groupId>com.caocaorbac</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
 </project>
