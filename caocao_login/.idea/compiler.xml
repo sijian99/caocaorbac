@@ -13,14 +13,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="caocao-model" />
         <module name="caocao-service" />
-        <module name="caocao-dao" />
         <module name="caocao-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="app-module" target="1.8" />
+      <module name="caocao-dao" target="1.8" />
+      <module name="caocao-model" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

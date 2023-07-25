@@ -5,10 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <modules>
-    <module>caocao-dao</module>
     <module>caocao-service</module>
     <module>caocao-web</module>
-    <module>caocao-model</module>
   </modules>
 
   <parent>
