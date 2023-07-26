@@ -1,38 +1,30 @@
 package com.caocaorbac.po;
 
+import com.caocaorbac.dto.MeterRuleDTO;
 import lombok.Data;
+
+import java.time.LocalDateTime;
 
 //储存所有城市中，不同车型，不同订单类型的收费标准
 @Data
-public class MeterRule {
+public class MeterRule extends MeterRuleDTO {
+    /* 城市编码 */
     private String city_code;
+    /* 订单类型，请参照《1.5 订单状态及类型》*/
     private int order_type;
+    /* 服务车型：2 新能源；3 舒适型；4 豪华型；5 商务型；7 优选*/
     private int car_type;
+    //创建人
+    private String create_by;
+    //创建时间
+    private LocalDateTime create_time;
+    //更新人
+    private String update_by;
+    //更新时间
+    private LocalDateTime update_time;
+    //是否删除，0为未删除，1为已删除
+    private boolean delete;
 
-    private int carTypeCode;
-    private String carTypeDesc;
-    private int startPrice_basePrice;
-    /* 描述，起步价 */
-    private String startPrice_desc;
-    /* 起步公里数 */
-    private double startPrice_startIncludeKm;
-    /* 起步分钟数 */
-    private int startPrice_startIncludeMinute;
-
-    private int kmPrice_basePrice;
-    private String kmPrice_desc;
-    private int timePrice_basePrice;
-    private String timePrice_desc;
-    private int longWay_basePrice;
-    private String longWay_desc;
-    private int longWay_longWayStart;
-    private String nightFee_nightStart;
-    private String nightFee_nightEnd;
-    private double nightFee_nightIncludeKm;
-    private double nightFee_nightStartPrice;
-    private int nightFee_nightPrice;
-    private int festivalFee_price;
-    private String festivalFee_desc;
 
 
 

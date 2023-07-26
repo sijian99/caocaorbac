@@ -2,6 +2,7 @@ package com.caocaorbac.po;
 
 //储存司机和司机驾驶车辆的基本信息
 public class DriverCar {
+
     private long driver_id;
     private String avatar;
     private String carBrand;

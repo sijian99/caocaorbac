@@ -1,8 +1,6 @@
 package com.caocaorbac.utils;
 
 import cn.hutool.json.JSONUtil;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
 import com.caocaorbac.model.XxlJobInfo;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +14,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
+import com.google.gson.*;
 
 
 @Component
@@ -45,7 +44,7 @@ public class XxlUtil {
         params.put("appName", appName);
         String json = JSONUtil.toJsonStr(params);
         String result = doPost(xxlJobAdminAddress + GET_GROUP_ID, json);
-        JSONObject jsonObject = JSON.parseObject(result);
+        JsonObject jsonObject = new JsonParser().parse(result).getAsJsonObject();
         Map<String, Object> map = (Map<String, Object>) jsonObject.get("content");
         Integer groupId = (Integer) map.get("id");
         xxlJobInfo.setJobGroup(groupId);
