@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
-public class UserController {
-    @Autowired
-    private UserService userService;
-
-    @PostMapping("/v2/common/orderCar")
-    public void orderCar(OrdercarVo ordercarVo){
-
-    }
-}
+//@RestController
+//public class UserController {
+//    @Autowired
+//    private UserService userService;
+//
+//    @PostMapping("/v2/common/orderCar")
+//    public void orderCar(OrdercarVo ordercarVo){
+//
+//    }
+//}

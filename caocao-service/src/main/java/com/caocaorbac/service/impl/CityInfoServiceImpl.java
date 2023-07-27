@@ -45,8 +45,9 @@ public class CityInfoServiceImpl implements CityInfoService {
     @Override
     public void saveCitiesInfo(){
         //需要传入参数:client_id,timestamp,sign
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("/v2/common/getAllCities",String.class);
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("/mock/v2/common/getAllCities",String.class);
         String body = responseEntity.getBody();
+        System.out.println(body);
         JsonObject jsonObject = new JsonParser().parse(body).getAsJsonObject();
         try{
             JsonObject data = jsonObject.getAsJsonObject("data");

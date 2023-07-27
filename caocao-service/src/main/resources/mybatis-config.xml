@@ -20,6 +20,7 @@
     <!-- 映射器 -->
     <mappers>
         <mapper resource="mapper/CityInfoMapper.xml" />
+        <mapper resource="mapper/MockMapper.xml" />
 
     </mappers>
 </configuration>
