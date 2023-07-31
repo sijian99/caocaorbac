@@ -3,7 +3,7 @@ package com.caocaorbac.service.impl;
 import com.caocaorbac.dto.CityInfoDTO;
 import com.caocaorbac.mapper.CityInfoMapper;
 import com.caocaorbac.service.CityInfoService;
-import com.caocaorbac.service.XxlService;
+//import com.caocaorbac.service.XxlService;
 
 import com.google.gson.*;
 import lombok.extern.slf4j.Slf4j;
@@ -25,9 +25,9 @@ public class CityInfoServiceImpl implements CityInfoService {
 
     @Autowired
     private CityInfoMapper cityInfoMapper;
+//    @Autowired
+//    private XxlService xxlService;
     @Autowired
-    private XxlService xxlService;
-
     private RestTemplate restTemplate;
 
     public <T> List<T> getObjList(T t, String url, String parm){
@@ -45,7 +45,7 @@ public class CityInfoServiceImpl implements CityInfoService {
     @Override
     public void saveCitiesInfo(){
         //需要传入参数:client_id,timestamp,sign
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("/mock/v2/common/getAllCities",String.class);
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://localhost:9090/mock/v2/common/getAllCities",String.class);
         String body = responseEntity.getBody();
         System.out.println(body);
         JsonObject jsonObject = new JsonParser().parse(body).getAsJsonObject();
@@ -75,6 +75,7 @@ public class CityInfoServiceImpl implements CityInfoService {
 //            System.out.println(e);
 //        }
 //    }
+
 
 
 }

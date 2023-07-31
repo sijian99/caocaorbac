@@ -7,7 +7,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-@MapperScan
+@MapperScan(basePackages = {"com.caocaorbac.mapper"})
 public class CaocaoapiApplication {
     public static void main(String[] args) {
         SpringApplication.run(CaocaoapiApplication.class, args);

@@ -7,7 +7,7 @@
         INSERT INTO cities(cityName, cityCode, newEnergy,taxi,
                            comfortable,luxurious,commercial,choiceness,economic_business)
         VALUES 
-        <foreach collection="cityInfos" item="cities" separator=",">
+        <foreach collection="list" item="cities" separator=",">
             (#{cities.cityName},#{cities.cityCode},#{cities.newEnergy},#{cities.taxi}
              ,#{cities.comfortable},#{cities.luxurious},#{cities.commercial},
             #{cities.choiceness}, #{cities.economic_business})
