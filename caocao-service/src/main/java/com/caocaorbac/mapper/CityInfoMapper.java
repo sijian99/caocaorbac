@@ -11,6 +11,4 @@ import java.util.List;
 public interface CityInfoMapper {
     void saveCitiesInfo(List<CityInfoDTO> cityInfos);
 
-
-
 }

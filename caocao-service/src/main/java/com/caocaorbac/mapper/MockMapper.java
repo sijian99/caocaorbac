@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface MockMapper {
-
     String mockGetData(String code);
 }
