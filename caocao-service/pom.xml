@@ -6,14 +6,14 @@
     <groupId>com.caocaorbac</groupId>
     <artifactId>caocao-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
 
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.3</version>
+        <version>3.0.0</version>
         <relativePath/>
     </parent>
 
@@ -25,8 +25,8 @@
         <org.projectlombok.version>1.18.20</org.projectlombok.version>
         <druid.version>1.1.18</druid.version>
         <springdoc.version>1.6.9</springdoc.version>
-        <spring-cloud.version>2022.0.3</spring-cloud.version>
-        <mybatis-spring-version>2.0.4</mybatis-spring-version>
+        <spring-cloud.version>2022.0.0</spring-cloud.version>
+        <mybatis-spring-version>3.0.2</mybatis-spring-version>
         <mybatis-version>3.5.2</mybatis-version>
         <mysql-version>8.0.19</mysql-version>
     </properties>
@@ -51,12 +51,12 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.1</version>
+            <version>3.5.3.1</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
-            <version>3.5.1</version>
+            <version>3.5.3.1</version>
         </dependency>
 
         <!--配置Mybatis的坐标-->
@@ -97,11 +97,11 @@
             <version>2.10.1</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-swagger2</artifactId>-->
+<!--            <version>2.9.2</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.mapstruct</groupId>
