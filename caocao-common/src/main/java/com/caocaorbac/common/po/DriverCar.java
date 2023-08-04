@@ -1,4 +1,4 @@
-package com.caocaorbac.po;
+package com.caocaorbac.common.po;
 
 //储存司机和司机驾驶车辆的基本信息
 public class DriverCar {

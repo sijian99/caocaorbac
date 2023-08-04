@@ -1,4 +1,4 @@
-//package com.caocaorbac.utils;
+package com.caocaorbac.common.utils;//package com.caocaorbac.utils;
 //
 //import cn.hutool.json.JSONUtil;
 //import com.caocaorbac.model.XxlJobInfo;

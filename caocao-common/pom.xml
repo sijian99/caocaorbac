@@ -7,6 +7,5 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>caocao-common</artifactId>
-    <name>Archetype - caocao-common</name>
-    <url>http://maven.apache.org</url>
+    <packaging>pom</packaging>
 </project>

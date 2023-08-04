@@ -1,4 +1,4 @@
-package com.caocaorbac.vo;
+package com.caocaorbac.common.vo;
 
 import lombok.Data;
 //批量查询订单的实际支付的本金与赠额具体数额

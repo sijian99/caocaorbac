@@ -1,6 +1,7 @@
 package com.caocaorbac.service.impl;
 
-import com.caocaorbac.dto.CityInfoDTO;
+
+import com.caocaorbac.common.dto.CityInfoDTO;
 import com.caocaorbac.mapper.CityInfoMapper;
 import com.caocaorbac.service.CityInfoService;
 //import com.caocaorbac.service.XxlService;
@@ -25,8 +26,7 @@ public class CityInfoServiceImpl implements CityInfoService {
 
     @Autowired
     private CityInfoMapper cityInfoMapper;
-//    @Autowired
-//    private XxlService xxlService;
+
     @Autowired
     private RestTemplate restTemplate;
 

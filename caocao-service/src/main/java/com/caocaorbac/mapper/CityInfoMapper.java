@@ -1,6 +1,7 @@
 package com.caocaorbac.mapper;
 
-import com.caocaorbac.dto.CityInfoDTO;
+
+import com.caocaorbac.common.dto.CityInfoDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

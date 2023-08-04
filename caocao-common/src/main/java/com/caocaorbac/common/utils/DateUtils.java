@@ -1,4 +1,4 @@
-package com.caocaorbac.utils;
+package com.caocaorbac.common.utils;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;

@@ -1,9 +1,9 @@
 package com.caocaorbac.controller;
 
+import com.caocaorbac.common.vo.QueryCityVO;
 import com.caocaorbac.mapper.UserMapper;
 import com.caocaorbac.service.UserService;
-import com.caocaorbac.vo.OrdercarVo;
-import com.caocaorbac.vo.QueryCityVO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

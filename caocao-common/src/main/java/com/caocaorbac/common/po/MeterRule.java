@@ -1,6 +1,7 @@
-package com.caocaorbac.po;
+package com.caocaorbac.common.po;
 
-import com.caocaorbac.dto.MeterRuleDTO;
+
+import com.caocaorbac.common.dto.MeterRuleDTO;
 import lombok.Data;
 
 import java.time.LocalDateTime;

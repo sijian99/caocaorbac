@@ -1,7 +1,8 @@
 package com.caocaorbac.controller;
 
 
-import com.caocaorbac.dto.CityInfoDTO;
+
+import com.caocaorbac.common.dto.CityInfoDTO;
 import com.caocaorbac.mapper.CityInfoMapper;
 import com.caocaorbac.service.CityInfoService;
 import com.google.gson.Gson;

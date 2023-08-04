@@ -1,6 +1,7 @@
-package com.caocaorbac.po;
+package com.caocaorbac.common.po;
 
-import com.caocaorbac.dto.CityInfoDTO;
+
+import com.caocaorbac.common.dto.CityInfoDTO;
 import lombok.Data;
 
 import java.time.LocalDateTime;

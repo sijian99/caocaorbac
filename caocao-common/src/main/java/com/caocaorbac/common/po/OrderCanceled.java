@@ -1,4 +1,4 @@
-package com.caocaorbac.po;
+package com.caocaorbac.common.po;
 
 import lombok.Data;
 
