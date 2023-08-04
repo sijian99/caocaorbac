@@ -1,0 +1,17 @@
+#logging:
+#    level:
+#        root: DEBUG
+
+server:
+    port: 8081
+spring:
+    application:
+        name: caocao-web
+    cloud:
+        consul:
+            discovery:
+                serviceName: ${spring.application.name}
+            host: localhost
+            port: 8500
+            heartbeat:
+                enabled: true

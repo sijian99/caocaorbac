@@ -8,6 +8,7 @@
     <module>caocao-service</module>
     <module>caocao-web</module>
     <module>feign-contract</module>
+      <module>caocao-common</module>
   </modules>
 
   <parent>
