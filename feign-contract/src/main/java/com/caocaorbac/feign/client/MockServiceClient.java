@@ -7,10 +7,10 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "caocao-service", path = "/mock", fallback = MockServiceFallback.class)
+@FeignClient(name = "caocao-service", url = "http://localhost:9090/mock/v2/common/getAllCities",fallback = MockServiceFallback.class)
 @Component
 public interface MockServiceClient {
-    @GetMapping(value="/v2/common/getAllCities")
+    @GetMapping
     String mockGetData();
 
 }
